@@ -1,0 +1,11 @@
+<app-header-slide
+  *ngIf="topic"
+  [image]="topic.image"
+  [title]="topic.title"
+  [subtitle]="topic.subtitle"
+  [progress]="topic.progress"
+  backButtonText="Agenda"
+  (backButtonClicked)="goToAgenda()"
+>
+  <router-outlet></router-outlet>
+</app-header-slide>

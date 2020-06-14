@@ -1,0 +1,13 @@
+<app-slide>
+  <header>
+    <app-progress [progress]="progress"></app-progress>
+    <app-avatar [image]="image" *ngIf="image"></app-avatar>
+    <div class="title">
+      <app-title [title]="title" [subtitle]="subtitle"></app-title>
+    </div>
+    <app-button *ngIf="backButtonText" (buttonClick)="goBack($event)">{{ backButtonText }}</app-button>
+  </header>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+</app-slide>

@@ -1,0 +1,14 @@
+$border-color: rgba(
+  $color: #000000,
+  $alpha: 0.3,
+);
+
+$border: 0.75px solid $border-color;
+
+$margin: 8px;
+$padding: 16px;
+
+$transition: all linear 0.15s;
+$transition-slow: all linear 1s;
+
+$almost-white: #edf0f6;

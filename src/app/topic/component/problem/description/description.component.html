@@ -1,0 +1,38 @@
+<div class="slide-container">
+  <div class="row fjs-start">
+    <h3>Definition</h3>
+  </div>
+  <div class="row f-auto fai-center fjc-center">
+    <div class="f-auto">
+      <div>
+        <cite>
+          In the case of RxJS, the main problem being solved is the ability to handle
+          <b>data that from asynchronous calls over multiple events.</b> (examples: DOM Input events, Web Workers, Web
+          Sockets)
+        </cite>
+      </div>
+      <br />
+      <div class="animated" [class.hide]="currentClicks < 2">
+        <cite>
+          RxJS combines the <b>Observer pattern</b> with the <b>Iterator pattern</b> and
+          <b>functional programming techniques used with collections</b> to fill the need for an ideal way of managing
+          sequences of events.
+        </cite>
+      </div>
+      <br />
+      <div class="animated" [class.hide]="currentClicks < 3">
+        <cite>RxJS goes step further to <b>unify all sources of data</b>.</cite>
+      </div>
+    </div>
+    <div class="animated" [class.hide]="currentClicks < 1">
+      <img src="/assets/images/data-diagram.png" *ngIf="currentClicks < 3" width="550" alt="graph" />
+      <img src="/assets/images/data-diagram-2.png" *ngIf="currentClicks >= 3" width="550" alt="graph" />
+    </div>
+  </div>
+  <div class="row fjs-end fjc-space-between">
+    <div></div>
+    <app-button [disabled]="!completed" (buttonClick)="goTo(['topics', 'problem', 'object-example'])">
+      Next
+    </app-button>
+  </div>
+</div>

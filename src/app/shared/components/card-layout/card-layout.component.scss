@@ -1,0 +1,27 @@
+@import 'core/variables';
+
+.container {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    transition: $transition;
+
+    ::ng-deep > * {
+      transition: $transition;
+      flex: 1 1 50%;
+    }
+
+    &.single {
+      transition: $transition;
+      ::ng-deep > * {
+        transition: $transition;
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'core/variables';
+@import 'core/normalize';
+@import 'core/typography';
+
+.animated {
+  transition: $transition-slow;
+  opacity: 1;
+  max-width: auto;
+  max-height: auto;
+
+  &.hide {
+    opacity: 0;
+    max-width: 0;
+    max-height: 0;
+  }
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+  padding: $padding * 2;
+  border-radius: $padding;
+  background-color: white;
+  user-select: none;
+
+  .row {
+    display: flex;
+  }
+}
+
+.fai-center {
+  align-items: center;
+}
+
+.fjc-space-between {
+  justify-content: space-between;
+}
+
+.fas-start {
+  align-self: flex-start;
+}
+
+.fjs-start {
+  justify-self: flex-start;
+}
+
+.fas-end {
+  align-self: flex-end;
+}
+
+.fjs-end {
+  justify-self: flex-end;
+}
+
+.fjc-center {
+  justify-content: center;
+}
+
+.f-auto {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,26 @@
+@import 'core/variables';
+
+.button {
+  display: block;
+  background-color: $almost-white;
+  padding: $padding;
+  border: $border;
+  border-radius: $padding;
+  transition: $transition;
+  font-size: 0.7em;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: white;
+    transform: scale(1.02);
+  }
+}
+
+.disabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}

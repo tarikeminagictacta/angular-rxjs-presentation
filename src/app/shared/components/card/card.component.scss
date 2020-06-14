@@ -1,0 +1,30 @@
+@import 'core/variables';
+
+.card {
+  margin: $margin;
+  padding: $padding;
+  display: flex;
+  align-items: center;
+  background-color: $almost-white;
+  border: $border;
+  border-radius: $padding;
+  transition: $transition;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+    background-color: #ffffff;
+  }
+
+  > * {
+    margin: $margin;
+  }
+
+  img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+  }
+}

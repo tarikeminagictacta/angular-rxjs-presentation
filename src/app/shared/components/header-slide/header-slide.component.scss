@@ -1,0 +1,29 @@
+@import 'core/variables';
+
+:host {
+  user-select: none;
+}
+
+header {
+  border-bottom: $border;
+  background-color: white;
+  padding: $padding $padding * 2;
+  border-top-left-radius: $padding;
+  border-top-right-radius: $padding;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  .title {
+    flex: 1 1 auto;
+
+    h3 {
+      margin: 0 $padding;
+    }
+  }
+}
+
+.content {
+  padding: $padding;
+}

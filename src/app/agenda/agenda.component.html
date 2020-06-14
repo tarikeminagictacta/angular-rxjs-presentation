@@ -1,0 +1,12 @@
+<app-header-slide title="Agenda" image="https://ya-webdesign.com/transparent250_/bibliography-clipart-2.png">
+  <app-card-layout>
+    <app-card
+      [image]="topic.image"
+      [title]="topic.title"
+      [subtitle]="topic.subtitle"
+      [progress]="topic.progress"
+      (cardClick)="navigateToTopic(topic)"
+      *ngFor="let topic of topics"
+    ></app-card>
+  </app-card-layout>
+</app-header-slide>
