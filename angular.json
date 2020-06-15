@@ -54,6 +54,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/angular-rxjs-presentation/",
+              "deployUrl": "/angular-rxjs-presentation/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -133,6 +135,10 @@
               "devServerTarget": "angular-code-presentation:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

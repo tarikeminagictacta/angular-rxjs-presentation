@@ -36,6 +36,6 @@ export class TopicService {
   }
 
   private getAllViaHttp(): Observable<Topic[]> {
-    return this.httpClient.get<Topic[]>('/api/topics.json').pipe(tap((topics) => this.topics$.next(topics)));
+    return this.httpClient.get<Topic[]>(`./api/topics.json`).pipe(tap((topics) => this.topics$.next(topics)));
   }
 }
