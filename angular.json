@@ -55,7 +55,6 @@
           "configurations": {
             "production": {
               "baseHref": "/angular-rxjs-presentation/",
-              "deployUrl": "/angular-rxjs-presentation/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
