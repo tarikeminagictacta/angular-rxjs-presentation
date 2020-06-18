@@ -1,0 +1,11 @@
+// source of data
+let data$ = of({
+  name: 'Tarik',
+  profession: 'Developer'
+});
+
+// consuming data source
+data$.subscribe(data => console.log(data));
+
+// console output
+// {name: "Tarik", profession: "Developer"}

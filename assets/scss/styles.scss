@@ -6,13 +6,9 @@
 .animated {
   transition: $transition-slow;
   opacity: 1;
-  max-width: auto;
-  max-height: auto;
 
   &.hide {
     opacity: 0;
-    max-width: 0;
-    max-height: 0;
   }
 }
 
@@ -60,4 +56,8 @@
 
 .f-auto {
   flex: 1 1 auto;
+}
+
+.m-1 {
+  margin: $margin;
 }
