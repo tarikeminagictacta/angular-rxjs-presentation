@@ -47,9 +47,6 @@
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets", "src/api"],
             "styles": ["src/assets/scss/styles.scss"],
-            "stylePreprocessorOptions": {
-              "includePaths": ["src/assets/scss"]
-            },
             "scripts": []
           },
           "configurations": {
@@ -110,9 +107,6 @@
             "karmaConfig": "karma.conf.js",
             "assets": ["src/favicon.ico", "src/assets", "src/api"],
             "styles": ["src/assets/scss/styles.scss"],
-            "stylePreprocessorOptions": {
-              "includePaths": ["src/assets/scss"]
-            },
             "scripts": []
           }
         },

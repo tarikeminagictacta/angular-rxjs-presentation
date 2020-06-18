@@ -1,0 +1,11 @@
+// source of data
+let data = {
+  name: 'Tarik',
+  profession: 'Developer'
+};
+
+// consuming data source
+console.log(data);
+
+// console output
+// {name: "Tarik", profession: "Developer"}

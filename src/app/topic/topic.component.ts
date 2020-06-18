@@ -45,7 +45,6 @@ export class TopicComponent implements OnInit, OnDestroy {
   }
 
   private fetchData() {
-    console.log('fetching data');
     forkJoin({
       topic: this.topicService.get(this.topicId),
       currentProgress: this.progressService.getTopicCurrentProgress(this.topicId),

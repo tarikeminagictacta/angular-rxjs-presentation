@@ -1,1 +1,30 @@
-<p>object-example works!</p>
+<div class="slide-container" *ngIf="code">
+  <div class="row fjs-start">
+    <h3>Imagining data as a stream - Objects/functions</h3>
+  </div>
+  <div class="row animated" [class.hide]="currentClicks < 1">
+    <cite>
+      Syncronous data souces that dispatch data over one event like objects and functions can be viewed as stream that
+      contains a single value. Once we get that data, you can do whith it whatever you like, and you can consider that
+      that stream is complete.
+    </cite>
+  </div>
+  <div class="row f-auto">
+    <div class="col f-auto m-1 animated" [class.hide]="currentClicks < 2">
+      <h5>JS</h5>
+      <app-code>{{ code.jsCode }} </app-code>
+    </div>
+    <div class="col f-auto m-1 animated" [class.hide]="currentClicks < 3">
+      <h5>RxJS</h5>
+      <app-code>{{ code.tsCode }} </app-code>
+    </div>
+  </div>
+  <div class="row fjs-end fjc-space-between">
+    <app-button (buttonClick)="goTo(['topics', 'problem', 'description'])">
+      Previous
+    </app-button>
+    <app-button (buttonClick)="goTo(['topics', 'problem', 'object-example'])">
+      Next
+    </app-button>
+  </div>
+</div>

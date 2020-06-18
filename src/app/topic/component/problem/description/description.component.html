@@ -21,7 +21,10 @@
       </div>
       <br />
       <div class="animated" [class.hide]="currentClicks < 3">
-        <cite>RxJS goes step further to <b>unify all sources of data</b>.</cite>
+        <cite>
+          RxJS goes step further to <b>represent all data with one abstraction</b>. This is achieved by imagining all
+          data as a stream.
+        </cite>
       </div>
     </div>
     <div class="animated" [class.hide]="currentClicks < 1">
@@ -31,7 +34,7 @@
   </div>
   <div class="row fjs-end fjc-space-between">
     <div></div>
-    <app-button [disabled]="!completed" (buttonClick)="goTo(['topics', 'problem', 'object-example'])">
+    <app-button (buttonClick)="goTo(['topics', 'problem', 'object-example'])">
       Next
     </app-button>
   </div>
